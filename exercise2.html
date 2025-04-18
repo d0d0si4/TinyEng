@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/LOGO.png" type="image/x-icon">
+    <title>Аудирование</title>
+</head>
+<body>
+    <header>
+        <a href="main.html" class="header_logo">
+            <img src="src/LOGO.png" alt="" srcset="">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </header>
+    <main>
+        <div class="main_upper-text">
+            <h1>АУДИРОВАНИЕ</h1>
+            <br>
+            <p>*коснись предложения для озвучивания*</p>
+        </div>
+        <div class="exercise2">
+            <div class="exercise2-screen" id="exercise2-screen">
+                <button id="replay-audio-btn" class="audio-btn"></button>
+            </div>
+            <div class="exercise2-var" id="exercise2-var-var1" onclick="checkAnswer2('exercise2-var-var1')"></div>
+            <div class="exercise2-var" id="exercise2-var-var2" onclick="checkAnswer2('exercise2-var-var2')"></div>
+            <div class="exercise2-var" id="exercise2-var-var3" onclick="checkAnswer2('exercise2-var-var3')"></div>
+            <div class="exercise2-var" id="exercise2-var-var4" onclick="checkAnswer2('exercise2-var-var4')"></div>
+            <div class="empty"></div>
+        </div>
+        <div class="exercise2-next-question" id="next-question2-btn" onclick="loadNextQuestion2()">
+            Далее
+        </div>
+    </main>
+    <footer>
+        <a href="main.html" class="footer_logo">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
