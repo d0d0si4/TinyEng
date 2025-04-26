@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/LOGO.png" type="image/x-icon">
+    <title>Произношение</title>
+</head>
+<body>
+    <header>
+        <a href="main.html" class="header_logo">
+            <img src="src/LOGO.png" alt="" srcset="">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </header>
+    <main>
+            <div class="main_upper-text">
+                <h1>ПРОИЗНОШЕНИЕ</h1>
+                <br>
+                <p>*повтори за диктором*</p>
+            </div>
+            <div class="exercise4">
+                <div class="exercise4-screen" id="exercise4-word-text">
+                    Нажми "Слушать", затем повтори слово
+                </div>
+                <div class="exercise4-buttons">
+                    <div class="exercise4-button" onclick="exercise4PlayWord()">▶️ Слушать</div>
+                    <div class="exercise4-button" onclick="exercise4StartListening()">🎤 Говорить</div>
+                </div>
+                <div class="exercise4-feedback" id="exercise4-feedback"></div>
+                <div class="exercise4-next" onclick="exercise4NextWord()">Следующее слово</div>
+            </div>
+    </main>
+    <footer>
+        <a href="main.html" class="footer_logo">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

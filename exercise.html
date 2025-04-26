@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/LOGO.png" type="image/x-icon">
+    <title>Выбор упражнения</title>
+</head>
+<body>
+    <header>
+        <a href="main.html" class="header_logo">
+            <img src="src/LOGO.png" alt="" srcset="">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </header>
+    <main>
+        <div class="main_upper-text">
+            <h1>Выбери упражнение</h1>
+            <br>
+        </div>
+        <div class="main-exercise_grid">
+          <div class="main-exercise_grid-item" id="exer1">
+            <div class="main-exercise_grid-item-cell">
+                времена глагола
+            </div>
+            <div class="main-exercise_grid-item-cell-expanding-block">
+                <div class="main-exercise_grid-item-cell-expanding-block-half">
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-text_upper">
+                        Суть упражнения
+                    </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-text_supper">
+                        тренировка правильного использования времён английского глагола с местоимением "HE"
+                    </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-button">Начать</div>
+                </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-video">
+                        <video
+                            id="exercise-video"
+                            muted
+                            width="100%"
+                            playsinline
+                            loop
+                            preload="auto"
+                        >
+                            <source src="src/EX1.mp4" type="video/mp4" />
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+            </div>
+          </div>
+      
+          <div class="main-exercise_grid-item" id="exer2">
+            <div class="main-exercise_grid-item-cell">
+              аудирование
+            </div>
+            <div class="main-exercise_grid-item-cell-expanding-block">
+                <div class="main-exercise_grid-item-cell-expanding-block-half">
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-text_upper">
+                        Суть упражнения
+                    </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-text_supper">
+                        Прослушай предложение → найди пропущенное слово 
+                    </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-button">Начать</div>
+                </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-video">
+                        <video
+                            id="exercise-video"
+                            muted
+                            width="100%"
+                            playsinline
+                            loop
+                            preload="auto"
+                        >
+                            <source src="src/EX2.mp4" type="video/mp4" />
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+            </div>
+          </div>
+          <div class="main-exercise_grid-item" id="exer3">
+            <div class="main-exercise_grid-item-cell">
+                Перевод по картинке
+            </div>
+            <div class="main-exercise_grid-item-cell-expanding-block">
+                <div class="main-exercise_grid-item-cell-expanding-block-half">
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-text_upper">
+                        Суть упражнения
+                    </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-text_supper">
+                        Выбор правильного слова, основываясь на изображении
+                    </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-button">Начать</div>
+                </div>
+                    <div class="main-exercise_grid-item-cell-expanding-block-half-video">
+                        <video
+                            id="exercise-video"
+                            muted
+                            width="100%"
+                            playsinline
+                            loop
+                            preload="auto"
+                        >
+                            <source src="src/EX3.mp4" type="video/mp4" />
+                            Ваш браузер не поддерживает видео.
+                        </video>
+                    </div>
+            </div>
+          </div>
+      
+            <div class="main-exercise_grid-item" id="exer4">
+                <div class="main-exercise_grid-item-cell">
+                произношение
+                </div>
+                <div class="main-exercise_grid-item-cell-expanding-block">
+                    <div class="main-exercise_grid-item-cell-expanding-block-half">
+                        <div class="main-exercise_grid-item-cell-expanding-block-half-text_upper">
+                        Суть упражнения
+                        </div>
+                        <div class="main-exercise_grid-item-cell-expanding-block-half-text_supper">
+                        Послушай слово → скажи его вслух → получи обратную связь
+                        </div>
+                        <div class="main-exercise_grid-item-cell-expanding-block-half-button" onclick="startPronunciationExercise()">Начать</div>
+                    </div>
+                <div class="main-exercise_grid-item-cell-expanding-block-half-video">
+                    <video
+                    id="exercise-video"
+                    muted
+                    width="100%"
+                    playsinline
+                    loop
+                    preload="auto"
+                    >
+                    <source src="src/EX4.mp4" type="video/mp4" />
+                    Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+                </div>
+            </div>
+            <div class="main-exercise_grid-item" id="exer5">
+                <div class="main-exercise_grid-item-cell">
+                    Определи время
+                </div>
+                <div class="main-exercise_grid-item-cell-expanding-block">
+                    <div class="main-exercise_grid-item-cell-expanding-block-half">
+                        <div class="main-exercise_grid-item-cell-expanding-block-half-text_upper">
+                            Суть упражнения
+                        </div>
+                        <div class="main-exercise_grid-item-cell-expanding-block-half-text_supper">
+                            Выбрать правильный вариант времени из нескольких предложенных, основываясь на показанном предложении
+                        </div>
+                        <div class="main-exercise_grid-item-cell-expanding-block-half-button" onclick="startPronunciationExercise()">Начать</div>
+                    </div>
+                <div class="main-exercise_grid-item-cell-expanding-block-half-video">
+                    <video
+                    id="exercise-video"
+                    muted
+                    width="100%"
+                    playsinline
+                    loop
+                    preload="auto"
+                    >
+                    <source src="src/EX5.mp4" type="video/mp4" />
+                    Ваш браузер не поддерживает видео.
+                    </video>
+                </div>
+                </div>
+            </div>
+        </div>
+      </main>      
+    <footer>
+        <a href="main.html" class="footer_logo">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

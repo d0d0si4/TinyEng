@@ -1,0 +1,140 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+@font-face{
+    font-family: Kodchasan;
+    src: url(src/Шрифт/Kodchasan/Kodchasan-Regular.ttf);
+}
+@font-face{
+    font-family: Nunito;
+    src: url(src/Шрифт/Nunito/Nunito-ExtraLight.ttf);
+}
+@media screen and (max-width: 1100px) {
+    .opros-main-box{
+        width: 90% !important;
+        height: 350px !important;
+    }
+    
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(204, 241, 255) 0%, rgb(251, 204, 255) 100%);
+    overflow: hidden;
+    text-transform: uppercase;
+    user-select: none;
+    background-position: center;
+    background-size: 200% 100%;
+    transition: background-position 0.5s ease-in-out;
+    overflow-x: hidden;
+}
+
+body.boy-hover {
+    background-position: 0% 50%;
+}
+
+body.girl-hover {
+    background-position: 100% 50%;
+}
+
+/* При загрузке сразу ставим нужную сторону, чтобы цвет соответствовал полу */
+body.boy {
+    background-position: 0% 50%;
+}
+
+body.girl {
+    background-position: 100% 50%;
+}
+@keyframes opros {
+    0%{
+        margin-top: -1500px;
+        opacity:0;
+    }
+    100%{
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+.opros-main-box{
+    width: 40%;
+    height: 350px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family:nunito;
+    font-size: 30px;
+    box-shadow: 0px 0px 10px -1px rgba(143,141,143,1);
+    text-align: center;
+    animation: opros 1s ease-in-out ;
+}
+.opros-main-box-supper{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-around;
+    font-size: 25px;
+}
+.opros-main-box-supper-block{
+    cursor: pointer;
+    position: relative;
+}
+.opros-main-box-supper-block > img{
+    transition: all 0.3s ease-in-out;
+    width: 90%;
+}
+.opros-main-box-supper-block > img:hover{
+    transform: translate(0,-5px);
+}

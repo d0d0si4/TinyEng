@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/LOGO.png" type="image/x-icon">
+    <title>Что на картинке</title>
+</head>
+<body>
+    <header>
+        <a href="main.html" class="header_logo">
+            <img src="src/LOGO.png" alt="" srcset="">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </header>
+    <main>
+        <div class="main_upper-text">
+            <h1>ЧТО НА КАРТИНКЕ?</h1>
+            <br>
+            <p>*посмотри на картинку и выбери правильный ответ*</p>
+        </div>
+        
+        <div class="exercise3">
+            <div class="exercise3-screen" id="exercise3-screen">
+            </div>
+            <div class="exercise3-var" id="exercise3-var-var1" onclick="checkAnswer3('exercise3-var-var1')"></div>
+            <div class="exercise3-var" id="exercise3-var-var2" onclick="checkAnswer3('exercise3-var-var2')"></div>
+            <div class="exercise3-var" id="exercise3-var-var3" onclick="checkAnswer3('exercise3-var-var3')"></div>
+            <div class="exercise3-var" id="exercise3-var-var4" onclick="checkAnswer3('exercise3-var-var4')"></div>
+            <div class="empty"></div>
+        </div>
+        
+        <div class="exercise3-next-question" id="next-question3-btn" onclick="nextQuestion3()">
+            Далее
+        </div>
+    </main>
+    <footer>
+        <a href="main.html" class="footer_logo">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>

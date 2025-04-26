@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="src/LOGO.png" type="image/x-icon">
+    <title>Определи время</title>
+</head>
+<body>
+    <header>
+        <a href="main.html" class="header_logo">
+            <img src="src/LOGO.png" alt="" srcset="">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </header>
+    <main>
+        <div class="main_upper-text">
+            <h1>ОПРЕДЕЛИ ВРЕМЯ</h1>
+            <br>
+            <p>*прочти и выбери правильное время*</p>
+        </div>
+        <div class="exercise5">
+            <div class="exercise5-screen" id="exercise5-screen">
+                <div id="exercise5-image" class="emoji-display5"></div>
+            </div>
+            <div class="exercise5-var" id="exercise5-var-var1" onclick="checkAnswer5('exercise5-var-var1')"></div>
+            <div class="exercise5-var" id="exercise5-var-var2" onclick="checkAnswer5('exercise5-var-var2')"></div>
+            <div class="exercise5-var" id="exercise5-var-var3" onclick="checkAnswer5('exercise5-var-var3')"></div>
+            <div class="exercise5-var" id="exercise5-var-var4" onclick="checkAnswer5('exercise5-var-var4')"></div>
+        </div>
+        
+        <div class="exercise5-next-question" id="next-question5-btn" onclick="loadNextQuestion5()">
+            Далее
+        </div>
+    </main>
+    <footer>
+        <a href="main.html" class="footer_logo">
+            <h1 class="header_logo_logo-text">TinyEng</h1>
+        </a>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
+
