@@ -768,7 +768,7 @@ video{
     background-color: white;
     text-align: center;
     display: flex;
-    font-size: 40px;
+    font-size: 35px;
     align-items: center;
     justify-content: center;
     z-index: 1;
@@ -799,7 +799,7 @@ video{
     z-index: 999;
 }
 .exercise5-var:hover{
-    font-size: 43px;
+    font-size: 30px;
 }
 .exercise1-var.correct,
 .exercise2-var.correct,
