@@ -526,13 +526,13 @@ function showDifficultySelection(exercise) {
   `;
   
   // Отображаем варианты сложности в элементах exercise-var
-  document.getElementById(`exercise${exercise}-var-var1`).innerHTML = '😎Легкий';
+  document.getElementById(`exercise${exercise}-var-var1`).innerHTML = '<p style="font-size:25px;">😎Легкий</p>';
   document.getElementById(`exercise${exercise}-var-var1`).setAttribute('onclick', `selectDifficulty(${exercise}, 'easy')`);
   
-  document.getElementById(`exercise${exercise}-var-var2`).innerHTML = '🧐Средний';
+  document.getElementById(`exercise${exercise}-var-var2`).innerHTML = '<p style="font-size:25px;">🧐Средний</p>';
   document.getElementById(`exercise${exercise}-var-var2`).setAttribute('onclick', `selectDifficulty(${exercise}, 'medium')`);
   
-  document.getElementById(`exercise${exercise}-var-var3`).innerHTML = '🫡Сложный';
+  document.getElementById(`exercise${exercise}-var-var3`).innerHTML = '<p style="font-size:25px;">🫡Сложный</p>';
   document.getElementById(`exercise${exercise}-var-var3`).setAttribute('onclick', `selectDifficulty(${exercise}, 'hard')`);
   
   // Очищаем четвертый вариант или используем его для чего-то еще при необходимости
